@@ -10,6 +10,7 @@
     "url": "http://github.com/HosseinKarami/fastshell.git"
   },
   "devDependencies": {
+
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
@@ -20,6 +21,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-uglify": "^1.5.1",
+    "include-media": "^1.4.9",
     "jshint": "^2.8.0"
   }
 }
