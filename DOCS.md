@@ -19,15 +19,21 @@ Boilerplate utilises open source components running on the Terminal/command-line
 
 Clone this repo
 
-  git clone https://github.com/danoszz/boilerplate
+````
+git clone https://github.com/danoszz/boilerplate
+````
 
 Install dependencies
 
-	npm install
+````
+npm install
+````
 
 Fire up the server and let Gulp do all the hard work
 
-	gulp
+````
+gulp
+````
 
 You are good to go!
 
