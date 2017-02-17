@@ -1,12 +1,11 @@
 # Boilerplate
 
-Based on[Fastshell](https://hosseinkarami.com/fastshell/)
-Fiercely quick front-end boilerplate and workflows.
+Based on [Fastshell](https://hosseinkarami.com/fastshell/) Fiercely quick front-end boilerplate and workflows.
 
 The opinionated FastShell framework. Built for the modern developer. For teams and the individual, encouraging a better workflow. JavaScript task running, build processes, autominification and file concatenation, wrapped with an enhanced HTML5 boilerplated framework.
 
 * Source: [github.com/HosseinKarami/fastshell](http://github.com/HosseinKarami/fastshell)
-* Documentation: [DOCS.md](https://github.com/HosseinKarami/fastshell/blob/master/DOCS.md)
+* Documentation: [DOCS.md](https://github.com/danoszz/boilerplate/blob/master/DOCS.md)
 
 ## License
 
