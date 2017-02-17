@@ -1,13 +1,13 @@
 {
-  "name": "fastshell",
-  "title": "Fiercely quick and opinionated front-ends",
+  "name": "boilerplate",
+  "title": "Quick way to setup your Gulp + SASS front-end environment",
   "author": "Hossein Karami",
-  "url": "https://HosseinKarami.github.io/fastshell",
-  "version": "1.0.5",
+  "url": "https://github.com/danoszz/boilerplate",
+  "version": "1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/HosseinKarami/fastshell.git"
+    "url": "https://github.com/danoszz/boilerplatet"
   },
   "dependencies": {
     "jquery": "3.1.1"
