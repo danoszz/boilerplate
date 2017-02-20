@@ -1,0 +1,28 @@
+// Animations for each module
+
+$transition--smooth: cubic-bezier(.2,.88,.52,1);
+$ratio: 1.6;
+$delay__1: 225ms;
+$delay__2: $delay__1 * $ratio;
+$delay--total: ($delay__1 + $delay__2) / 2;
+
+.logo {
+  opacity: 0;
+  animation: ($delay--total * 2) fadeInBottom forwards;
+  animation-delay: $delay__1;
+  animation-timing-function: $transition--smooth;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
