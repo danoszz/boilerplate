@@ -1,18 +1,27 @@
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, $base 0, $darken 80%, $back 100%);
+  background: $color--black;
 }
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   transition: all .4s .3s ease-in;
+  width: calc(100% + #{$width--scrollbar});
 }
 body,html{
 	min-height: 100vh;
 	overflow: hidden;
+  overflow-y: scroll; /* force scroll to appear */
+
+}
+
+/* helper class when showing content */
+.noscroll {
+    overflow: hidden;
 }

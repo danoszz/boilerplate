@@ -1,3 +1,21 @@
-$base : #F7F6F0;
-$darken : darken(#F7F6F0 , 30%);
-$back: darken(#F7F6F0, 40%);
+// Colors
+
+$color--black: #000;
+$color--white: #fff;
+
+// Typography
+
+$font-mono: 'Source Code Pro', monospace;
+$font-sans: 'Cabin', sans-serif;
+$font-serif: 'Cardo', serif;
+
+// Breakpoints
+
+$breakpoints: (phone: 30em, tablet: 55em, desktop: 64em, bigassscreen: 105em);
+
+// Transitions
+
+
+// Sizes
+
+$width--scrollbar: 0.5rem;

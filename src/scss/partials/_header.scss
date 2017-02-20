@@ -1,10 +1,24 @@
 .header {
-
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + #{$width--scrollbar});
 }
-.logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
 
+.logo {
+  img {
+    width: 5rem;
+  }
+  svg {
+    color: $color--white;
+    width: 100%;
+    height: 10rem;
+    @include media("<phone") {
+      height: 5rem;
+    }
+    path {
+      fill: currentColor;
+    }
   }
 }

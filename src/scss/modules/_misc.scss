@@ -1,3 +1,5 @@
+/*----- SELECTION -----*/
+
 ::selection{
   background: #333;
   color: #fff;
@@ -13,3 +15,27 @@
   color: #fff;
   text-shadow: none;
 }
+
+/*----- SCROLLBAR -----*/
+
+::-webkit-scrollbar {
+  width: $width--scrollbar;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: $color--white;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: transparent;
+}
+
+  body {
+    scrollbar-face-color: $color--white;
+    scrollbar-track-color: transparent;
+  }
