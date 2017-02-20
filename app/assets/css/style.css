@@ -397,6 +397,9 @@ textarea {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -406,18 +409,19 @@ textarea {
           align-items: center;
   width: calc(100% + 0.5rem); }
 
-.logo img {
-  width: 5rem; }
-
-.logo svg {
-  color: #fff;
-  width: 100%;
-  height: 10rem; }
-  @media (max-width: 29.99em) {
-    .logo svg {
-      height: 5rem; } }
-  .logo svg path {
-    fill: currentColor; }
+.logo {
+  margin-bottom: 5rem; }
+  .logo img {
+    width: 5rem; }
+  .logo svg {
+    color: #fff;
+    width: 100%;
+    height: 10rem; }
+    @media (max-width: 29.99em) {
+      .logo svg {
+        height: 5rem; } }
+    .logo svg path {
+      fill: currentColor; }
 
 .nav ul {
   list-style: none; }
@@ -430,14 +434,28 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
-.logo {
+h1 {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1em;
+  font-weight: 400; }
+  h1 a {
+    color: inherit; }
+
+.header * {
   opacity: 0;
-  -webkit-animation: 585ms fadeInBottom forwards;
-          animation: 585ms fadeInBottom forwards;
-  -webkit-animation-delay: 225ms;
-          animation-delay: 225ms;
+  -webkit-animation: 1824ms fadeInBottom forwards;
+          animation: 1824ms fadeInBottom forwards;
   -webkit-animation-timing-function: cubic-bezier(0.2, 0.88, 0.52, 1);
           animation-timing-function: cubic-bezier(0.2, 0.88, 0.52, 1); }
+
+.header .logo {
+  -webkit-animation-delay: 285ms;
+          animation-delay: 285ms; }
+
+.header h1 {
+  -webkit-animation-delay: 627ms;
+          animation-delay: 627ms; }
 
 @-webkit-keyframes fadeInBottom {
   0% {

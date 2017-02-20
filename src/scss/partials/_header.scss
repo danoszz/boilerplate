@@ -1,12 +1,15 @@
 .header {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
   width: calc(100% + #{$width--scrollbar});
+
 }
 
 .logo {
+  margin-bottom: 5rem;
   img {
     width: 5rem;
   }

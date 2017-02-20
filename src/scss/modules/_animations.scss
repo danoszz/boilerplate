@@ -1,16 +1,23 @@
 // Animations for each module
 
 $transition--smooth: cubic-bezier(.2,.88,.52,1);
-$ratio: 1.6;
-$delay__1: 225ms;
+$ratio: 2.2;
+$delay__1: 285ms;
 $delay__2: $delay__1 * $ratio;
-$delay--total: ($delay__1 + $delay__2) / 2;
+$delay--total: ($delay__1 + $delay__2) * 2;
 
-.logo {
-  opacity: 0;
-  animation: ($delay--total * 2) fadeInBottom forwards;
-  animation-delay: $delay__1;
-  animation-timing-function: $transition--smooth;
+.header {
+   * {
+     opacity: 0;
+     animation: $delay--total fadeInBottom forwards;
+     animation-timing-function: $transition--smooth;
+   }
+  .logo {
+     animation-delay: $delay__1;
+  }
+  h1 {
+    animation-delay: $delay__2;
+  }
 }
 
 @keyframes fadeInBottom {
