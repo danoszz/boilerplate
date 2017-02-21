@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danoszz/boilerplatet"
+    "url": "https://github.com/danoszz/boilerplate"
   },
   "dependencies": {
     "jquery": "3.1.1"
