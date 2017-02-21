@@ -1,9 +1,9 @@
 /*!
  * boilerplate
  * Quick way to setup your Gulp + SASS front-end environment
- * https://github.com/danoszz/boilerplate
+ * https://devign.it/boilerplate
  * @author Daan van der Zwaag
- * @version 1.0
+ * @version 1.0.1
  * Copyright 2017. MIT licensed.
  */
 *{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;text-rendering:optimizeLegibility}html{background:#000}body{font:300 13px/1.6 Helvetica Neue,Helvetica,Arial;color:#444;transition:all .4s ease-in .3s;width:calc(100% + .5rem)}body,html{min-height:100vh;overflow:hidden;overflow-y:scroll}.noscroll{overflow:hidden}
