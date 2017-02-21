@@ -3,7 +3,7 @@
   "title": "Quick way to setup your Gulp + SASS front-end environment",
   "author": "Daan van der Zwaag",
   "url": "https://devign.it/boilerplate",
-  "version": "1.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
