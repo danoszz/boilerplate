@@ -6,11 +6,12 @@ $delay__1: 285ms;
 $delay__2: $delay__1 * $ratio;
 $delay--total: ($delay__1 + $delay__2) * 2;
 
+$fadeinBottom: $delay--total $transition--smooth fadeInBottom forwards;
+
 .header {
    * {
      opacity: 0;
-     animation: $delay--total fadeInBottom forwards;
-     animation-timing-function: $transition--smooth;
+     animation: $fadeinBottom;
    }
   .logo {
      animation-delay: $delay__1;
