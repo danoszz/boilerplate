@@ -1,0 +1,38 @@
+.grid--lines {
+  .lines__horizontal,
+  .lines__vertical {
+    display: flex;
+    pointer-events: none;
+    justify-content: space-between;
+    position: fixed;
+    z-index: -1;
+    .line {
+      background-color: darken($color--white, 90%);
+    }
+  }
+
+  .lines__vertical {
+    flex-direction: row;
+    width: calc(100% + #{$width--scrollbar} - (#{$width--sidebar} / 2) - (#{$icon--size} / 2) );
+    height: 100%;
+    top: 0;
+    left: $padding--sidebar;
+    .line {
+      height: 0;
+      width: 1px;
+    }
+  }
+
+  .lines__horizontal {
+    //display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - (#{$width--sidebar} / 2) - (#{$icon--size} / 2) );
+    top: $padding--sidebar;
+    left: 0;
+    .line {
+      width: 0;
+      height: 1px;
+    }
+  }
+}
