@@ -1,124 +1,139 @@
 // Animations for each module
-
 $transition--smooth: cubic-bezier(.2,.88,.52,1);
-$ratio: 1.8;
-$delay__1: 265ms;
+
+$ratio: 1.6;
+$delay__1: 165ms;
 $delay__2: $delay__1 * $ratio;
 $delay__3: $delay__2 * $ratio;
 $delay__4: $delay__3 * $ratio;
 $delay__5: $delay__4 * $ratio;
-
-$delay--total: ($delay__1 + $delay__2 + $delay__3 + $delay__4 + $delay__5) / 5;
-
+$delay--total: ($delay__1 + $delay__2 + $delay__3 + $delay__4 + $delay__5) / 6;
 $fadeinBottom: $delay--total $transition--smooth fadeInBottom forwards;
-//
-// .header {
-//    * {
-//      opacity: 0;
-//      animation: $fadeinBottom;
-//    }
-//   .logo {
-//      animation-delay: $delay__1;
-//   }
-//   h1 {
-//     animation-delay: $delay__2;
-//   }
-// }
 
-
-.sidebar {
-  &.sidebar--left {
-    header,
-    nav,
-    footer {
+.col {
+  &.col--left {
+    header h1 {
       opacity: 0;
       animation: $fadeinBottom;
       animation-timing-function: $transition--smooth;
     }
+
     header {
-      animation-delay: $delay__1;
+      h1 {
+        animation-delay: $delay__1;
+
+        &+p {
+          animation-delay: $delay__1 + ($delay__1 / 2);
+        }
+      }
     }
+
     nav {
       animation-delay: $delay__2;
     }
 
     footer {
-      animation-delay: $delay__3;
+      @for $i from 1 to 5 {
+        p:nth-child(#{$i}) {
+          animation-delay: $delay__3 + ($i * $delay__1 / 5);
+        }
+      }
     }
   }
-  &.sidebar--right {
-    .logo {
-      opacity: 0;
-      animation: $fadeinBottom;
-      // animation-delay: $delay--loading;
-      animation-timing-function: $transition--smooth;
-    }
-    .logo {
-      animation-delay: $delay__4;
-    }
-    .arrow--scroll {
+
+  &.col--right {
+     .info--list * {
+       opacity: 0;
+       animation: $fadeinBottom;
+       animation-timing-function: $transition--smooth;
+
+     }
+     .info--list__projects,
+     .info--list__contact {
+
+       h3 {
+         animation-delay: $delay__1;
+       }
+       ul {
+         @for $i from 1 to 8 {
+           li:nth-child(#{$i}) {
+             animation-delay: $delay__1 + ($i * $delay__1);
+           }
+         }
+       }
+     }
+
+    .coming-soon {
       animation-delay: $delay__5;
     }
-
   }
+}
+
+.logo {
+  opacity: 0;
+  animation: $fadeinBottom;
+  animation-delay: $delay__4;
+  animation-timing-function: $transition--smooth;
 }
 
 .grid--lines {
   .lines__horizontal,
-  .lines__vertical  {
-
+  .lines__vertical {
     @for $i from 1 to 8 {
       .line:nth-child(#{$i}) {
         animation-delay: $delay__1 + ($i * $delay__1);
       }
     }
+
     .line {
       animation-timing-function: $transition--smooth;
     }
   }
+
   .lines__horizontal {
     .line {
-      animation: $delay--total lineRight 1 both;
+      @include media(">phone") {
+        animation: $delay--total lineRight 1 both;
+      }
     }
   }
+
   .lines__vertical {
-
     .line {
-      animation: $delay--total lineDown 1 both;
-
+      @include media(">phone") {
+        animation: $delay--total lineDown 1 both;
+      }
     }
   }
 }
-
-
-  @keyframes lineRight {
-    0% {
-      width: 0%;
-    }
-
-    100% {
-      width: 100%;
-    }
-  }
-  @keyframes lineDown {
-    0% {
-      height: 0%;
-    }
-
-    100% {
-      height: 100%;
-    }
+@keyframes lineRight {
+  0% {
+    width: 0;
   }
 
+  100% {
+    width: 100%;
+  }
+}
+@keyframes lineDown {
+  0% {
+    height: 0;
+  }
 
+  100% {
+    height: 100%;
+  }
+}
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
     transform: translateY(50px);
   }
-  75% {
+
+  80% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

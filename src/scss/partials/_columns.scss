@@ -1,0 +1,124 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
+//  width: $width--sidebar;
+  position: fixed;
+  color: $color--white;
+  padding: $padding--sidebar;
+
+  &.col--left {
+    left: 0;
+    top: 0;
+    padding-right: 0;
+    width: calc((#{$width--flex__col} * 3) + #{$padding--sidebar});
+    header {
+
+      h1 {
+
+        @include media(">phone") {
+          margin-left: -1px;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $icon--size / 2;
+      p {
+      margin: 0;
+        a {
+          color: rgba($color--white, 0.5);
+          display: inline;
+        }
+        &:hover {
+          color: $color--white;
+          a {
+            color: rgba($color--white, 1);
+          }
+        }
+      }
+
+    }
+  }
+  &.col--right {
+    right: -$width--scrollbar;
+    top: 0;
+    flex-direction: row;
+    padding-left: 0;
+    width: calc((#{$width--flex__col} * 2) + #{$padding--sidebar} + #{$width--scrollbar} - 5px);
+
+    section {
+
+      &.section--info {
+        width: calc(#{$width--flex__col} * 2);
+        display: flex;
+        align-self: flex-end;
+        position: relative;
+        @include media("<tablet") {
+          width: 100%;
+        }
+        .info--list {
+
+          ul {
+            list-style: none;
+            padding: 0;
+
+          }
+        }
+        .info--list__contact {
+          position: absolute;
+          left: $width--flex__col;
+          @include media("<tablet") {
+            left: calc(#{$width--flex__col} * 2);
+          }
+          @include media("<phone") {
+            left: calc(#{$width--flex__col} * 3);
+          }
+        }
+      }
+      &.section--sidebar {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+    }
+  }
+
+  @include media("<tablet") {
+    height: initial;
+    position: initial;
+    &.col--left, &.col--right {
+      left: initial;
+      top: initial;
+      padding: $padding--sidebar;
+    }
+    &.col--right {
+      width: 100%;
+    }
+    &.col--left {
+      width: calc((#{$width--flex__col} * 4) + #{$padding--sidebar});
+      padding-right: 0;
+    }
+  }
+
+  @include media("<phone") {
+    &.col--left, &.col--right {
+      padding: $padding--sidebar / 2;
+      padding-right: 0;
+
+    }
+      &.col--left {
+        width: calc((#{$width--flex__col} * 5) + (#{$padding--sidebar} / 2));
+      //  width: 100%;
+      }
+
+  }
+
+}

@@ -1,134 +1,199 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>Boilerplate by @danoszz</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimal-ui, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <title>Boilerplate by @danoszz</title>
 
-    <!--- Social Metadata --->
-    <meta property="og:image" content="https://devign.it/images/social/share-image_fb.jpg"/>
-    <meta property="og:title" content="Boilerplate by @danoszz"/>
-    <meta property="og:url" content="https://devign.it"/>
-    <meta property="og:site-name" content="Boilerplate by @danoszz"/>
-    <meta name="description" content="Quick way to setup your Gulp + SASS front-end environment"/>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@daanvanderzwaag">
-    <meta name="twitter:creator" content="@daanvanderzwaag">
-    <meta name="twitter:title" content="Boilerplate by @danoszz">
-    <meta name="twitter:description" content="Quick way to setup your Gulp + SASS front-end environment">
-    <meta name="twitter:image:src" content="assets/images/social/share-image_twitter.jpg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimal-ui, shrink-to-fit=no">
 
-    <!--- Favicon --->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Boilerplate by @danoszz"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="assets/images/favicon/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="assets/images/favicon/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="assets/images/favicon/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png" />
-    <link href="favicon.ico" rel="shortcut icon">
+  <!--- Social Metadata --->
+  <meta property="og:image" content="https://devign.it/images/social/share-image_fb.jpg" />
+  <meta property="og:title" content="Boilerplate by @danoszz" />
+  <meta property="og:url" content="https://devign.it" />
+  <meta property="og:site-name" content="Boilerplate by @danoszz" />
+  <meta name="description" content="Quick way to setup your Gulp + SASS front-end environment" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@daanvanderzwaag">
+  <meta name="twitter:creator" content="@daanvanderzwaag">
+  <meta name="twitter:title" content="Boilerplate by @danoszz">
+  <meta name="twitter:description" content="Quick way to setup your Gulp + SASS front-end environment">
+  <meta name="twitter:image:src" content="assets/images/social/share-image_twitter.jpg">
 
-    <!--- Import fonts, advised to import fonts from server with @font-face instead of cloud import. Used for demo purposes --->
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,700i|Cardo:400,700|Source+Code+Pro:300,500,700" rel="stylesheet">
+  <!--- Favicon --->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Boilerplate by @danoszz" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="assets/images/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="assets/images/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="assets/images/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png" />
+  <link href="favicon.ico" rel="shortcut icon">
 
-    <link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="assets/css/style.min.css" rel="stylesheet">
-    <script src="assets/components/modernizr/modernizr.js"></script>
+  <!--- Import fonts, advised to import fonts from server with @font-face instead of cloud import. Used for demo purposes --->
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,700i|Cardo:400,700|Source+Code+Pro:300,500,700" rel="stylesheet">
 
-  </head>
-  <body>
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <script src="assets/components/modernizr/modernizr.js"></script>
 
-    <!-- <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/images/logo-devign.svg" alt="Logo Devign">
-        </a>
+</head>
+
+<body class="loading">
+
+  <div class="col col--left">
+    <header>
+      <!-- <h1>Devign.it is a new label by Daan van der Zwaag. It will be focussing digital based concept development and design.</h1> -->
+      <h1>Digital product development & Brand and experience design</h1>
+    </header>
+  </div>
+  <div class="col col--right">
+    <section class="section--info">
+      <div class="info--list info--list__projects">
+        <h3>Projects</h3>
+              <ul class="mouseOver_text">
+          <li><a href="#" target="_blank" rel="http://madebyrens.com/wp-content/uploads/slider/img12.jpg" class="screenshot">Made by Rens</a></li>
+          <li><a href="#" target="_blank" rel="http://madebyrens.com/wp-content/uploads/slider/img12.jpg" class="screenshot">Hey Listen!</a></li>
+          <li><a href="#" target="_blank" rel="http://madebyrens.com/wp-content/uploads/slider/img12.jpg" class="screenshot">currentColor</a></li>
+          <li><a href="#" target="_blank" rel="http://madebyrens.com/wp-content/uploads/slider/img12.jpg" class="screenshot">Boreel</a></li>
+          <li><a href="#" target="_blank" rel="http://tholman.com/giflinks/img/internet.gif" class="screenshot">Lariva</a></li>
+          <li><a href="#" target="_blank" rel="http://madebyrens.com/wp-content/uploads/slider/img12.jpg" class="screenshot">AVM</a></li>
+        </ul>
       </div>
-      <h1>Boilerplate by <a href="https://github.com/danoszz/boilerplate" target="_blank">@danoszz</a></h1>
-    </header> -->
-    <div class="sidebar sidebar--left">
-  <header>
-    <h1>Devign.it</h1>
-    <p>Creative digital concept development</p>
-  </header>
-  <footer class="footer">
-    <p><a href="#">GitHub</a></p>
-    <p><a href="#">Codepen</a></p>
-    <p><a href="#">Behance</a></p>
-    <p><a href="#">Old site</a></p>
-  </footer>
-</div>
-<div class="sidebar sidebar--right">
+      <div class="info--list info--list__contact">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="">Codepen</a></li>
+          <li><a href="">Github</a></li>
+          <li><a href="">Behance</a></li>
+          <li><a href="">LinkedIn</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Email</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+  </div>
+  <div class="container--images">
+
+  </div>
   <a class="logo" href="#">
-    <svg width="532" height="708" viewBox="0 0 532 708" xmlns="http://www.w3.org/2000/svg">
-      <title>Logo Devign</title>
-      <path d="M132.478 399.134l-43.255 43.254L266 619.165l176.777-176.777-22.097-22.097 44.194-44.193 44.194 44.194 22.097 22.098L266 707.553l-22.097-22.097L.835 442.388l22.097-22.097L89.222 354 .836 265.612l22.097-22.097 220.97-220.97L266 .446l265.165 265.165-22.097 22.097L266 530.776l-22.097-22.097-89.013-89.014 44.194-44.194L266 442.388 354.388 354 266 265.612l-80.49 80.49-.624-.626-53.033 53.033.625.624zm.94-89.328L266 177.223l22.097 22.097 110.486 110.486 44.194-44.194L266 88.835 89.223 265.612l44.194 44.194z" fill="currentColor" fill-rule="evenodd"/>
-    </svg>
-  </a>
-  <a href="#visuals" class="arrow--scroll">
-    <div class="icon arrow arrow__down">
-      <div>
-        <span class="right"></span>
-        <span class="right"></span>
-        <span class="left"></span>
-        <span class="left"></span>
-      </div>
+  <svg width="532" height="708" viewBox="0 0 532 708" xmlns="http://www.w3.org/2000/svg">
+    <path d="M132.478 399.134l-43.255 43.254L266 619.165l176.777-176.777-22.097-22.097 44.194-44.193 44.194 44.194 22.097 22.098L266 707.553l-22.097-22.097L.835 442.388l22.097-22.097L89.222 354 .836 265.612l22.097-22.097 220.97-220.97L266 .446l265.165 265.165-22.097 22.097L266 530.776l-22.097-22.097-89.013-89.014 44.194-44.194L266 442.388 354.388 354 266 265.612l-80.49 80.49-.624-.626-53.033 53.033.625.624zm.94-89.328L266 177.223l22.097 22.097 110.486 110.486 44.194-44.194L266 88.835 89.223 265.612l44.194 44.194z" fill="currentColor" fill-rule="evenodd"/>
+  </svg>
+</a>
+
+  <div class="grid--lines">
+    <div class="lines__vertical">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-  </a>
-</div>
-    <main class="main" role="main">
-      <div id="canvas"></div>
-    </main>
-    <div class="grid--lines">
-      <div class="lines__vertical">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <div class="lines__horizontal">
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+    <div class="lines__horizontal">
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
+  </div>
 
-    <script src="assets/components/three/three.min.js"></script>
-    <script src="assets/js/three/loaders/OBJLoader.js"></script>
+  <script src="assets/components/jquery/jquery.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+  <script>
+    (function($) {
+      $(document).ready(function() {
+        /*
+         * Url preview script
+         * powered by jQuery (http://www.jquery.com)
+         *
+         * base written by Alen Grakalic (http://cssglobe.com)
+         * edited by Daan van der Zwaag (https://dvdz.design)
+         *
+         */
 
-    <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/object.min.js"></script>
+        function previewImages() {
+          /* CONFIG */
 
-    <script src="assets/js/scripts.min.js"></script>
+          xOffset = 180;
+          yOffset = 20;
 
+          // these 2 variable determine popup's distance from the cursor
+          // you might want to adjust to get the right result
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+          /* END CONFIG */
 
-  </body>
+          $("a.screenshot").hover(function(e) {
+
+              var $this = $(this); // caching $(this)
+
+              $this.data('initialText', $this.text());
+              $this.text("Download"); // Set text
+
+              $("body").append("<div id='previewImage'><img src='" + this.rel + "' alt='rens preview image' />" + "</div>");
+
+              $("#previewImage")
+                .css("top", (e.pageY - xOffset) + "px")
+                .css("left", (e.pageX + yOffset) + "px")
+                .fadeIn("fast");
+            },
+            function() {
+
+              var $this = $(this); // caching $(this)
+              $this.text($this.data('initialText'));
+
+              $("#previewImage").remove();
+            });
+
+          $("a.screenshot").mousemove(function(e) {
+
+            $("#previewImage")
+              .css("top", (e.pageY - xOffset) + "px")
+              .css("left", (e.pageX + yOffset) + "px");
+
+          });
+        };
+
+        previewImages();
+
+      });
+    })(jQuery);
+  </script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+
 </html>

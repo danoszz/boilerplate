@@ -1,0 +1,26 @@
+.mouseOver_text {
+  margin: 0 auto;
+  z-index: 2;
+  width: 100%;
+}
+
+.mouseOver_text img {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+  margin: 0 auto;
+}
+
+#previewImage {
+  position: absolute;
+  display: none;
+  color: #fff;
+  z-index: 2;
+  img {
+    width: 35vw;
+    @include media(">tablet") {
+      width: 35vh;
+    }
+  }
+
+}

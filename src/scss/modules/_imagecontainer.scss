@@ -1,0 +1,11 @@
+.container--images {
+  background-color: rgba(red, 0.3);
+
+  position: absolute;
+  z-index: -1;
+  bottom: #{$padding--sidebar} ;
+  left: #{$padding--sidebar};
+  width: calc((#{$width--flex__col} * 2) + 4px);
+  height: calc((#{$width--flex__col} * 1)) ;
+
+}

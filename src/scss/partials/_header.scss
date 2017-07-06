@@ -10,10 +10,18 @@
 
 .logo {
   margin-bottom: 5rem;
+  position: fixed;
+  top: $padding--sidebar;
+  right: calc(#{$padding--sidebar} - #{$width--scrollbar});
+  @include media("<phone") {
+    top: $padding--sidebar / 2;
+    right: calc((#{$padding--sidebar} / 2) - #{$width--scrollbar});
+  }
   img {
     width: 5rem;
     @include media("<phone") {
       height: 3.5rem;
     }
+
   }
 }
